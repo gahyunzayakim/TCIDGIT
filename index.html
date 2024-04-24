@@ -3,69 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Learning Platform </title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <title>GitHub Repository Setup Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .list-group-item {
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #f0f0f0; 
+            border: none; 
+            margin-bottom: 10px; 
+        }
+
+        .list-group-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Welcome to our Online Learning Platform</h1>
-        <p>Start your learning journey today!</p>
-        <a href="#courses" class="btn btn-primary">Explore Courses</a>
-    </div>
+<header class="header"> 
+    <img src="https://miro.medium.com/v2/resize:fit:1100/1*CWFkh5z8oa6dZfn5_gkKKQ.jpeg">
 </header>
 
-<section id="courses" class="bg-light">
+<section class="landing-page">
     <div class="container">
-        <h2>Explore Courses</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20190326201928-GettyImages-633710081-edit.jpeg" class="card-img-top" alt="Course 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Course Title 1</h5>
-                        <p class="card-text">Description of Course 1.</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://keystoneacademic-res.cloudinary.com/image/upload/element/11/117105_shutterstock_669868303.jpg" class="card-img-top" alt="Course 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Course Title 2</h5>
-                        <p class="card-text">Description of Course 2.</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://img.hktdc.com/eyJidWNrZXQiOiJjbXMtaW1nbGliLXByZCIsImtleSI6IlJNSVAvMjAyMTAyMDIvN3FjbnM1NGctVkdoaGFVTnZibk4xYldWeU1qQXlNVkpOU1ZCRlpIVmpZWFJwYjI1SmJtUmxlRkJwZUE9PS5qcGVnIiwicmVnaW9uIjoiYXAtc291dGhlYXN0LTEiLCJmb3JtYXQiOiJqcGVnIiwicXVhbGl0eSI6MTAwLCJlZGl0cyI6e319" class="card-img-top" alt="Course 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Course Title 3</h5>
-                        <p class="card-text">Description of Course 3.</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
+        <div class="jumbotron">
+            <h1 class="display-4">GitHub Repository Setup Guide</h1>
+            <p class="lead">Welcome to the GitHub Repository Setup Guide! Whether you're new to Git and GitHub or looking to enhance your skills, this guide will walk you through the process step by step.</p>
         </div>
     </div>
 </section>
 
-<footer class="bg-dark text-white">
+<main class="main-content">  
     <div class="container">
-        <p>&copy; 2024 Online Learning Platform</p>
+
+        <section id="setting-up">
+            <h2 class="mt-5 text-muted">Setting Up the Environment</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220302180214/gitscm.png">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Install Git and VS Code.</li>
+                <li class="list-group-item">Configure Git within VS Code (user name, email).</li>
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+    
+
+
+        <section id="creating-repo">
+            <h2 class="mt-5 text-muted">Creating a GitHub Repository</h2>
+            <img src="https://developers.sap.com/tutorials/webide-github-create-git-repo/_jcr_content.github-proxy.1563441917.file/p2_3.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Create a new repository on GitHub.</li>
+            
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+        <section id="cloning-repo">
+            <h2 class="mt-5 text-muted">Cloning a GitHub Repository</h2>
+            <img src="https://docs.github.com/assets/cb-10973/images/help/desktop/clone-file-menu-windows.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Clone the repository using VS Code's integrated Git support.</li>
+            
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+
+        <section id="basic-git">
+            <h2 class="mt-5 text-muted">Basic Git Operations in VS Code</h2>
+            <img src="https://i.stack.imgur.com/3VmBu.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Perform basic Git operations: status, add, commit, push, and pull through the VS Code GUI.</li>
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+        <section id="branching">
+            <h2 class="mt-5 text-muted">Branching with VS Code</h2>
+            <img src="https://i.stack.imgur.com/yc8Yn.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Use VS Code to create and switch between branches.</li>
+                <li class="list-group-item">Understand the concept of branching for feature development or bug fixes.</li>
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+        <section id="working-remote">
+            <h2 class="mt-5 text-muted">Working with Remote Repositories</h2>
+            <img src="https://code.visualstudio.com/assets/docs/sourcecontrol/intro/remote-repo.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Add and manage remote repositories directly from VS Code.</li>
+                <li class="list-group-item">Push to and pull from these remotes using the VS Code interface.</li>
+            </ol>
+            <br>
+            <hr>
+        </section>
+
+        <section id="pull-requests">
+            <h2 class="mt-5 text-muted">Pull Requests and Code Reviews within VS Code</h2>
+            <img src="https://dotnetvibes.files.wordpress.com/2018/09/github-pull-requests.png" width="600">
+            <br><br>
+            <ol class="list-group list-group-flush">
+                <li class="list-group-item">Create pull requests using GitHub and VS Code.</li>
+                <li class="list-group-item">Review and discuss pull requests.</li>
+            </ol>
+            <br>
+            <hr>
+        
+        </section>
+
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</main>
+
+<footer class="footer">  
+    <p>&copy; 2024 GitHub Repository Setup Guide</p>
 </footer>
 
-<!-- Bootstrap JS and jQuery (Optional) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
